@@ -9,8 +9,10 @@ script:
 
 after_success:
   - docker build -t dollypizzle/birdboard-app .
+  - docker build -t dollypizzle/birdboard-nginx -f Dockerfile.nginx .
   - echo $DOCKER_PASSWORD | docker login -u $DOCKER_ID --password-stdin
   - docker push dollypizzle/birdboard-app
+  - docker push dollypizzle/birdboard-nginx
 
 deploy:
   provider: elasticbeanstalk
