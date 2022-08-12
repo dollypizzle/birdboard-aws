@@ -3,7 +3,7 @@ services:
   #Laravel App
   #  The Application
   app:
-    container_name: laravel_appp
+    container_name: laravel_app
     build:
       context: ./
       dockerfile: Dockerfile
