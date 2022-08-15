@@ -3,14 +3,14 @@
   "containerDefinitions": [
     {
       "name": "birdboard",
-      "image": "noalistic/birdboard-app",
+      "image": "dollypizzle/birdboard-app",
       "hostname": "app",
       "memory": 512,
       "essential": false
     },
     {
       "name": "nginx",
-      "image": "noalistic/birdboard-nginx",
+      "image": "dollypizzle/birdboard-nginx",
       "hostname": "web",
       "memory": 128,
       "essential": true,
