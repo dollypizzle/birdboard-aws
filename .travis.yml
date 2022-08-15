@@ -18,7 +18,7 @@ deploy:
   app: birdboard-aws
   env: BirdboardAws-env
   bucket_name: elasticbeanstalk-ap-southeast-2-092749212479
-  bucket_path: birdboard-aws
+  bucket_path: birdboard-cli
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
